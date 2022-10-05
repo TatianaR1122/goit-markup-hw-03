@@ -2,6 +2,8 @@
 /* heder background #FFFFFF */
 /* main background #F5F5F5, #F5F4FA*/
 /* footer background #2F303A */
+
+
 h1,
 h2,
 h3,
@@ -17,39 +19,51 @@ ul,ol {
     margin-bottom: 0;
     padding-left: 0;
     list-style: none;
+}
 
+*
+*::before,
+*::after {
+
+    box-sizing: border-box;
 }
 
 img {
+
     display: block;
+    max-width: 100%;
+    height: auto;
 }
  
 button {
+
     cursor: pointer;
 }
 
 .list {
+
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
 .container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+
+    padding: 94px 0;
     align-items: center;
 }
 
 
 :root {
+
     --primary-text-color: #757575;
     --title-text-color: #212121; 
     --accent-color: #2196F3;
@@ -62,10 +76,7 @@ button {
     background-color: #FFFFFF;
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
-
 }
-
-
 
 .logo-link {
 
@@ -76,10 +87,10 @@ button {
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
-
 }
 
 .logo-header {
+
     color: #000000;
     font-family: Raleway, sans-serif;
     font-style: normal;
@@ -93,9 +104,11 @@ button {
 
     padding-top: 32px;
     padding-bottom: 32px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .page-navigation{
+
     display: flex;
     align-items: center;
     column-gap: 50px;
@@ -104,10 +117,10 @@ button {
 
 
 .auth-nav.list {
+
     display: flex;
     margin-left: 344px;
-    column-gap: 50px;
-    
+    column-gap: 50px;  
 }
 
 
@@ -116,7 +129,6 @@ button {
 
     display: flex;
     align-items: center;
-
 }
 
 .site-nav .link {
@@ -128,7 +140,6 @@ button {
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-decoration: none;
-
 }
 
 .site-nav .link.current {
@@ -140,7 +151,6 @@ button {
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-decoration: none;
-
 }
 
 .auth-nav .link {
@@ -152,14 +162,12 @@ button {
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-decoration: none;
-
 }
 
 .auth-nav :hover,
 .auth-nav :focus {
 
     color: var(--accent-color);
-
 }
 
 .page-header.auth-nav .link {
@@ -180,25 +188,30 @@ button {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 30px;
-    padding-left: 450px;
-    padding-right: 450px;
 }
 
 .section-hero {
+
     background-color: #2F303A;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    margin: 0 auto;
+    padding: 200px 450px;
 }
 
+.section-feature {
+
+    padding-bottom: 47px;
+}
 
 .feature-list {
-    
+
+    width: 1200px;
+    padding: 0 15px;
     display: flex;
     column-gap: 30px;
-    margin-bottom: 47px;
-    justify-content: space-between;
-    
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
 }
 
 .feature-list .title {
@@ -211,7 +224,6 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
-
 }
 
 .feature-list .text {
@@ -221,10 +233,8 @@ button {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    
+    width: 270px;
 }
-
-
 
 .visually-hidden {
 
@@ -240,33 +250,46 @@ button {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-
 }
 
+.section-images {
+
+    padding-top: 47px;
+}
 
 .section-images-foto {
-    padding-top: 47px;
+    
     display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
     column-gap: 30px;
     padding-bottom: 94px;
     align-items: center;
-
 }
  
 
 .section-team {
 
     background: #F5F4FA;
-
-
 }
  
 .team {
 
     display: flex;
+    justify-content: center;
     column-gap: 30px;
     border-width: 1px;
     border-color: var(--primary-text-color)
+}
+
+.team-content {
+
+    border-width: 1px;
+    border-color: var(--primary-text-color);
+    background: white;
+    padding: 30px 50px;
+    width: 270px;
 }
 
 .team .title {
@@ -279,11 +302,7 @@ button {
     /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
-    padding-top: 50px;
     margin-bottom: 10px;
-    background: white;
-    margin-bottom: 0;
-    padding-bottom: 10px;
 }
 
 .team .text {
@@ -296,12 +315,7 @@ button {
     /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
-    background: white;
-    margin-top: 0;
-    margin-bottom: 30px;
-    padding-bottom: 30px;
 }
-
 
 .section-title {
     color: var(--title-text-color);
@@ -312,10 +326,7 @@ button {
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
-
 }
-
-
 
 .button {
 
@@ -334,12 +345,12 @@ button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    align-items: center;
     letter-spacing: 0.06em;
     border: none;
+    border-radius: 4px;
 }
 
-.button.primary .section-hero{
+.button.primary .section-hero {
 
     margin-top: 30px;
 }
@@ -361,7 +372,6 @@ button {
     line-height: 16px;
     letter-spacing: 0.02em;
     text-decoration: none;
-
 }
 
 
@@ -376,15 +386,16 @@ button {
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
-
+    border: none;
+    padding: 6px 25px;
 }
 
 .filter-btn {
 
     display: flex;
     column-gap: 8px;
-    align-items: center;
-    
+    justify-content: center;
+    min-width: max-content; 
 }
 
 
@@ -394,7 +405,7 @@ button {
     flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 30px;
-    
+    justify-content: center;  
 }
 
 .filter:hover, 
@@ -412,15 +423,33 @@ button {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-top: 20px;
     margin-bottom: 4px;
+    
+    
 }
 
+.portfolio-content {
+
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+
+}
+
+.foto-content {
+
+    
+}
+
+ 
+.container-footer {
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
 .footer {
 
     background-color:#2F303A;
-
 }
    
 .footer .adress {
@@ -432,7 +461,8 @@ button {
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-decoration: none;
-
+    margin-top: 20px;
+    margin-bottom: 9px;
 }
 
 .footer .adress :hover,
@@ -445,7 +475,6 @@ button {
 .footer .link {
     
     color: rgba(255, 255, 255, 0.6);    
-
 }
 
 .footer.link:hover,
