@@ -102,8 +102,8 @@ button {
 
 .page-header{
 
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -184,6 +184,8 @@ button {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
+    max-width: 696px;
+    margin: 0 auto;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -195,7 +197,7 @@ button {
     background-color: #2F303A;
     text-align: center;
     margin: 0 auto;
-    padding: 200px 450px;
+    padding: 200px;
 }
 
 .section-feature {
@@ -264,7 +266,6 @@ button {
     margin-left: auto;
     justify-content: center;
     column-gap: 30px;
-    padding-bottom: 94px;
     align-items: center;
 }
  
@@ -288,7 +289,8 @@ button {
     border-width: 1px;
     border-color: var(--primary-text-color);
     background: white;
-    padding: 30px 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     width: 270px;
 }
 
@@ -339,7 +341,7 @@ button {
 
     display: inline-block;
     min-width: 216px;
-    padding: 10px, 32px;
+    padding: 10px 32px;
     color: var(--whight);
     background-color: var(--accent-color);
     font-weight: 700;
@@ -385,7 +387,7 @@ button {
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    
     border: none;
     padding: 6px 25px;
 }
@@ -396,6 +398,7 @@ button {
     column-gap: 8px;
     justify-content: center;
     min-width: max-content; 
+    margin-bottom: 50px;
 }
 
 
@@ -428,6 +431,17 @@ button {
     
 }
 
+.text-portfolio {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
 .portfolio-content {
 
     padding: 20px 24px;
@@ -443,13 +457,14 @@ button {
  
 .container-footer {
 
-    padding-top: 60px;
-    padding-bottom: 60px;
+    
 }
 
 .footer {
 
     background-color:#2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
    
 .footer .adress {
@@ -465,20 +480,34 @@ button {
     margin-bottom: 9px;
 }
 
-.footer .adress :hover,
-.footer .adress :focus {
+.link-footer {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    row-gap: 9px;
+}
+
+.footer .adress:hover,
+.footer .adress:focus {
 
     color: var(--accent-color);
 }
 
 
-.footer .link {
-    
-    color: rgba(255, 255, 255, 0.6);    
-}
-
-.footer.link:hover,
-.footer.link:focus {
+.footer .link-footer:hover,
+.footer .link-footer:focus {
 
     color: var(--accent-color);
 }
